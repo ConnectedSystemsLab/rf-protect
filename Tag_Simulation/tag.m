@@ -1,11 +1,11 @@
 clear all;
 c =  physconst('LightSpeed');
-fc = 5e9;                          % Operating freqency
+fc = 77e9;                          % Operating freqency
 range_max = 30;                    % maximum range estimation
 tm = 5.5*range2time(range_max,c);   % sweep time
 range_res = 0.1;                    % range resolution
 bw = range2bw(range_res,c);         % bandwidth
-num_antenna = 100;
+num_antenna = 16;
 sweep_slope = bw/tm;
 fr_max = range2beat(range_max,sweep_slope,c);% the beat frequency corresponding to the maximum range
 
@@ -27,8 +27,8 @@ waveform = phased.FMCWWaveform('SweepTime',tm,'SweepBandwidth',bw,'SampleRate',f
 %% Target
 car_dist = 43;
 car_speed = 96*1000/3600;
-human_rcs = db2pow(-10);
-% human_rcs = db2pow(min(10*log10(car_dist)+5,20));
+% human_rcs = db2pow(-10);
+human_rcs = db2pow(min(10*log10(car_dist)+5,20));
 
 gan_traj = gan_trajectory(index_gan);
 real_traj =  real_trajectory(index_real);
