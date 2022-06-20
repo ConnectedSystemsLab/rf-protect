@@ -10,7 +10,7 @@ RF-Protect was accepted by SIGCOMM'22. If you find RF-Protect useful, we kindly 
 
 **Explain:**
 
-- This dataset collected from our FMCW radar equiped with USRP X310 and is comprised of raw signals. While Radar is sensing the environment, we turn on our RF-Protect platform to generate additional signals which will be shown as human phantoms on the radar heatmaps.
+- This dataset is collected from our FMCW radar equiped with USRP X310 and is comprised of raw signals. While Radar is sensing the environment, we turn on our RF-Protect platform to generate additional signals which will be shown as human phantoms on the radar heatmaps.
 
 **Composition**:
 

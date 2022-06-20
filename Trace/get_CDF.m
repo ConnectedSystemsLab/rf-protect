@@ -1,5 +1,11 @@
+% Home Environment dir
 data_path = '../traj_save/trajs_collected_Home/traj_collect/raw/';
-gt_data_path = 'D:\UIUC\Tag\Jay-data\SIGCOMM_data\trajs_gt';
+
+% Office Environment dir
+% data_path = '../traj_save/trajs_collected_Office/traj_collect/raw/';
+
+% Trajectory GroundTruth dir
+gt_data_path = '../Radar_data/trajs_gt';
 data_info = dir(data_path);
 num_trajs = (length(data_info) - 2);
 %% Prefiltered
